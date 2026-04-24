@@ -19,4 +19,10 @@ public class CocheCombustion extends Vehiculo {
             System.out.println("Sin combustible");
         }
     }
+
+    public void pararMotor() {
+        motorEncendido = false;
+        System.out.println("Motor parado");
+    }
+    
 }
