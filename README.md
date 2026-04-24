@@ -1,19 +1,70 @@
-## Getting Started
+# ActividadesAbstracfaces
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este proyecto va sobre las Clases abstractas e interfaces.
 
-## Folder Structure
+Donde utilicé los conceptos de:
+* Interfaces
+* Clases abstractas
+* Herencia
+* Sobreescritura de métodos
 
-The workspace contains two folders by default, where:
+## Estructura del proyecto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+El proyecto está organizado en diferentes clases:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 🔹 FigurasGeo
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+* `CalculoGeometrico` → interfaz con métodos:
 
-## Dependency Management
+  * calcularArea()
+  * calcularPerimetro()
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-"# ActividadesAbstracfaces"  
+* `Rectangulo`
+
+* `Circulo` 
+
+---
+
+### 🔹 Vehículos
+
+* `Vehiculo` → clase abstracta con métodos:
+
+  * arrancar()
+  * pararMotor()
+  * mover()
+
+* `CocheCombustion` → hereda de Vehiculo
+
+## ⚙️ Funcionamiento
+
+### Figuras
+
+El programa solicita datos al usuario:
+
+* Base y altura (rectángulo)
+* Radio (círculo)
+
+Y muestra:
+
+* Área
+* Perímetro
+
+---
+
+### Vehículos
+
+Se simula el comportamiento de un coche:
+
+* Arranque del motor
+* Movimiento
+* Consumo de combustible
+
+## Tecnologías
+
+* Java
+* Git y GitHub
+
+
+## 👤 Autor
+
+* Adrián
