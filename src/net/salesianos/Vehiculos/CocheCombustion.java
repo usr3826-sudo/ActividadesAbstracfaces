@@ -9,5 +9,14 @@ public class CocheCombustion extends Vehiculo {
         super(color, puertas, ruedas, modelo, matricula);
         this.combustible = combustible;
     }
-    
+
+    public void arrancar() {
+        if (combustible > 0) {
+            motorEncendido = true;
+            combustible--;
+            System.out.println("Arrancado");
+        } else {
+            System.out.println("Sin combustible");
+        }
+    }
 }
