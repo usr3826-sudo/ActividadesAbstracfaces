@@ -1,7 +1,7 @@
 package net.salesianos.Vehiculos;
 
 public class CocheCombustion extends Vehiculo {
-    
+
     private boolean motorEncendido;
     private int combustible;
 
@@ -24,5 +24,14 @@ public class CocheCombustion extends Vehiculo {
         motorEncendido = false;
         System.out.println("Motor parado");
     }
-    
+
+    public void mover() {
+        if (!motorEncendido || combustible <= 0) {
+            System.out.println("No se puede mover");
+        } else {
+            combustible--;
+            System.out.println("Moviendo");
+        }
+    }
+
 }
